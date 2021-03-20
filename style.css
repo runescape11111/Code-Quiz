@@ -1,0 +1,47 @@
+body {
+    display:flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#quiz-area {
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+button.added-button {
+    margin: 10px;
+    min-width: 200px;
+    min-height: 50px;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 10px;
+}
+
+h2 {
+    font-size: 30px;
+    margin: 10px;
+}
+
+h3 {
+    font-size: 20px;
+    margin: 10px;
+}
+
+div {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+#right-wrong {
+    border-top: 2px solid black;
+    width: 50%;
+}
