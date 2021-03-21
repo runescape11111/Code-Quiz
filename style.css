@@ -1,8 +1,45 @@
 body {
     display:flex;
-    flex-direction:column;
+    flex-direction:row;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 50px;
+}
+
+main {
+    display:flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 70%;
+}
+
+#two-lists {
+    display: flex;
+    flex-direction:row;
+    width: 100%;
+}
+
+ol,ul {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+ol li:nth-child(odd),ul li:nth-child(odd) {
+    background-color: lightgray;
+}
+
+li {
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+aside {
+    width: 20%;
+    display:flex;
+    flex-direction:column;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -14,10 +51,15 @@ body {
     align-items: center;
 }
 
+button {
+    margin-top: 20px;
+    flex-grow: 0 1;
+    padding: 10px 25px;
+    font-weight: bold;
+}
+
 button.added-button {
-    margin: 10px;
-    min-width: 200px;
-    min-height: 50px;
+    width: 100%;
 }
 
 h1 {
@@ -27,7 +69,12 @@ h1 {
 
 h2 {
     font-size: 30px;
-    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+aside h2 {
+    margin-top: 60px;
 }
 
 h3 {
@@ -42,6 +89,6 @@ div {
 }
 
 #right-wrong {
-    border-top: 2px solid black;
+    /* border-top: 2px solid black; */
     width: 50%;
 }

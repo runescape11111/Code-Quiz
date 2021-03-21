@@ -28,6 +28,6 @@ pre, code {
 }
 
 /* Removes default bullet points from lists */
-ol, ul {
+ul {
   list-style: none;
 }

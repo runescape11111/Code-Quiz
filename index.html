@@ -9,11 +9,21 @@
     <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-    <h1>Code Quiz</h1>
-    <h2>Time: <span id="timer">0</span></h2>
-    <button id="start-button" style="display:block">Start</button>
-    <div id="quiz-area"></div>
-    <div id="right-wrong"></div>
+    <main>
+        <h1>Code Quiz</h1>
+        <h2>Time: <span id="timer"></span></h2>
+        <button id="start-button" style="display:block">Start</button>
+        <div id="quiz-area"></div>
+        <h2 id="right-wrong"></h2>
+    </main>
+    <aside>
+        <h2>Hiscores</h2>
+        <div id="two-lists">
+            <ol id="hiscore-players"></ol>
+            <ul id="hiscore-scores"></ul>
+        </div>
+        <button id="reset">Reset</button>
+    </aside>
     <script src="./script.js" defer></script>
 </body>
 </html>
