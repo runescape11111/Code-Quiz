@@ -39,12 +39,12 @@ li:nth-child(3) {
     color: #B87333;
 }
 
-li:nth-child(odd) {
-    background-color: lightgray;
+li:nth-child(even) {
+    background-color: cyan;
 }
 
-li:nth-child(even) {
-    background-color: darkgray;
+li:nth-child(odd) {
+    background-color: lightblue;
 }
 
 li {
@@ -81,6 +81,10 @@ button {
 button:hover {
     border-bottom: 2px solid gray;
     border-top: 4px solid gray;
+}
+
+button:active, button:focus {
+    outline:none;
 }
 
 button.added-button {

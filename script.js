@@ -84,7 +84,7 @@ function countDown() {
         //set condition for clearing interval, when questions run out or when timer reaches 0
         if((quizTime <= 0) || (questionIndex>=(randomPool.length))) {
             clearInterval(timerInterval);
-
+            
             //deletes the quiz area to prevent further attempts at answering
             quizArea.innerHTML = "";
             player = prompt("Game over! your final score is " + quizTime + "! Enter your name:");
@@ -100,6 +100,7 @@ function countDown() {
                 location.reload();
             } else {
                 timer.style.display = "none";
+                return;
             }
         }
         quizTime--;
@@ -151,6 +152,7 @@ quizArea.addEventListener("click",function(event) {
             rightWrong.setAttribute("style","color:red");
             //penalty of picking wrong answer, timer -10s
             quizTime -= 10;
+            timer.textContent = quizTime;
         }
     }
 
