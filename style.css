@@ -4,6 +4,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 50px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 main {
@@ -26,8 +27,24 @@ ol,ul {
     flex-direction: column;
 }
 
-ol li:nth-child(odd),ul li:nth-child(odd) {
+li:first-child {
+    color: #d0af12;
+}
+
+li:nth-child(2) {
+    color: silver;
+}
+
+li:nth-child(3) {
+    color: #B87333;
+}
+
+li:nth-child(odd) {
     background-color: lightgray;
+}
+
+li:nth-child(even) {
+    background-color: darkgray;
 }
 
 li {
@@ -52,10 +69,18 @@ aside {
 }
 
 button {
-    margin-top: 20px;
+    margin-top: 10px;
     flex-grow: 0 1;
     padding: 10px 25px;
     font-weight: bold;
+    border: 2px solid gray;
+    border-bottom: 4px solid gray;
+    border-radius: 500px;
+}
+
+button:hover {
+    border-bottom: 2px solid gray;
+    border-top: 4px solid gray;
 }
 
 button.added-button {
@@ -65,6 +90,7 @@ button.added-button {
 h1 {
     font-size: 40px;
     margin: 10px;
+    font-style: oblique;
 }
 
 h2 {
@@ -91,4 +117,5 @@ div {
 #right-wrong {
     border-top: 2px solid black;
     width: 50%;
+    font-family:"Brush Script MT",cursive;
 }

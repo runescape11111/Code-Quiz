@@ -65,6 +65,10 @@ function randomize(array) {
 
 //when clicking start button, the button disappears and countdown begins
 startButton.addEventListener("click",function(){
+    easyMode=confirm("Easy mode? You get 20 more seconds.");
+    if (easyMode) {
+        quizTime += 20;
+    }
     countDown();
     startButton.style.display = "none";
 });
@@ -99,6 +103,9 @@ function countDown() {
             }
         }
         quizTime--;
+        if (quizTime<=10) {
+            timer.setAttribute("style","color:red");
+        }
         timer.textContent = quizTime;
 
     }, 1000);
@@ -138,8 +145,10 @@ quizArea.addEventListener("click",function(event) {
         //check if the button has the correct answer, and print the corresponding message
         if (element.matches(".correct")) {
             rightWrong.textContent = "Correct!";
+            rightWrong.setAttribute("style","color:green");
         } else {
             rightWrong.textContent = "Wrong!";
+            rightWrong.setAttribute("style","color:red");
             //penalty of picking wrong answer, timer -10s
             quizTime -= 10;
         }
